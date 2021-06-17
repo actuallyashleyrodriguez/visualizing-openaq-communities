@@ -1,7 +1,10 @@
 import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
+import Communities from './communities';
 
-function App() {
+class App extends Component {
+  render() {
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        < Communities />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +24,7 @@ function App() {
       </header>
     </div>
   );
+}
 }
 
 export default App;
